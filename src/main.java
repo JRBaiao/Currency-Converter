@@ -21,6 +21,7 @@ public class main {
         currencyCodes.put(3, "EUR");
         currencyCodes.put(4, "HKD");
         currencyCodes.put(5, "INR");
+        currencyCodes.put(6, "BRL");
 
         Integer from, to;
         String fromCode, toCode;
@@ -31,21 +32,21 @@ public class main {
         System.out.println("Welcome to the currency converter!");
 
         System.out.println("Currency converting FROM?");
-        System.out.println("1:USD\t 2:CAD\t 3:EUR\t 4:HKD\t 5:INR\t ");
+        System.out.println("1:USD\t 2:CAD\t 3:EUR\t 4:HKD\t 5:INR\t 6:BRL\t ");
         from = sc.nextInt();
-        while(from < 1 || from > 5){
-            System.out.println("Please select a valid currency (1-5)");
-            System.out.println("Please select a valid currency (1-5)");
+        while(from < 1 || from > 6){
+            System.out.println("Please select a valid currency (1-6)");
+            System.out.println("Please select a valid currency (1-6)");
             from = sc.nextInt();
         }
         fromCode = currencyCodes.get(from);
 
         System.out.println("Currency converting TO?");
-        System.out.println("1:USD\t 2:CAD\t 3:EUR\t 4:HKD\t 5:INR\t ");
+        System.out.println("1:USD\t 2:CAD\t 3:EUR\t 4:HKD\t 5:INR\t 6:BRL\t ");
         to = sc.nextInt();
-        while(to < 1 || to > 5){
-            System.out.println("Please select a valid currency (1-5)");
-            System.out.println("Please select a valid currency (1-5)");
+        while(to < 1 || to > 6){
+            System.out.println("Please select a valid currency (1-6)");
+            System.out.println("Please select a valid currency (1-6)");
             to = sc.nextInt();
         }
         toCode = currencyCodes.get(to);
